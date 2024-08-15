@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <!-- Logo -->
+            <div>
+              <a
+                href="#"
+                class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
+              >
+                <svg
+                  class="h-6 w-6 mr-1 text-blue-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6l4 2m4-14v6a8 8 0 01-8 8H4"
+                  />
+                </svg>
+                <span class="font-bold">MyPortfolio</span>
+              </a>
+            </div>
+
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="#about"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >About</a
+              >
+              <a
+                href="#skills"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Skills</a
+              >
+              <a
+                href="#portfolio"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Portfolio</a
+              >
+              <a
+                href="#contact"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <!-- Secondary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="#hire-me"
+              class="py-2 px-3 bg-blue-500 text-white rounded hover:bg-blue-400"
+              >Hire Me</a
+            >
+          </div>
+
+          <!-- Mobile button -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-700 hover:text-gray-900"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden md:hidden">
+        <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          >About</a
+        >
+        <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          >Skills</a
+        >
+        <a href="#portfolio" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          >Portfolio</a
+        >
+        <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          >Contact</a
+        >
+        <a
+          href="#hire-me"
+          class="block py-2 px-4 text-sm bg-blue-500 text-white hover:bg-blue-400"
+          >Hire Me</a
+        >
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-20 text-center md:text-left">
+        <div class="md:flex md:items-center">
+          <!-- Left Side Content -->
+          <div class="md:w-1/2">
+            <h1
+              class="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl"
+            >
+              Hi, I'm <span class="text-blue-500">IQBAL GILL</span>
+            </h1>
+            <p class="mt-4 text-gray-600 text-lg md:text-xl">
+              I'm a passionate
+              <span class="text-blue-500">[Your Profession]</span> creating
+              beautiful and functional websites.
+            </p>
+            <p class="mt-4 text-gray-600 text-lg md:text-xl">
+              Let's build something great together.
+            </p>
+            <div class="mt-8">
+              <a
+                href="#portfolio"
+                class="bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-400"
+              >
+                View My Work
+              </a>
+              <a
+                href="#contact"
+                class="ml-4 bg-gray-300 text-gray-800 py-3 px-6 rounded-md hover:bg-gray-400"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side Image -->
+          <div
+            class="mt-12 md:mt-0 md:w-1/2 flex justify-center md:justify-end"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1723407877285-584e2d0053ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Profile Picture"
+              class="w-full h-full max-w-sm rounded-full shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            My Skills
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            Here are some of the technologies and tools I excel in.
+          </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Item -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="HTML"
+              class="mx-auto mb-4 w-20 h-20"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+            <p class="mt-2 text-gray-600">
+              Building the structure of websites with semantic and clean code.
+            </p>
+          </div>
+
+          <!-- Skill Item -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="CSS"
+              class="mx-auto mb-4 w-20 h-20"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
+            <p class="mt-2 text-gray-600">
+              Styling websites with responsive and modern designs.
+            </p>
+          </div>
+
+          <!-- Skill Item -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="JavaScript"
+              class="mx-auto mb-4 w-20 h-20"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+            <p class="mt-2 text-gray-600">
+              Adding interactivity and dynamic features to web applications.
+            </p>
+          </div>
+
+          <!-- Skill Item -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="React"
+              class="mx-auto mb-4 w-20 h-20"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">React</h3>
+            <p class="mt-2 text-gray-600">
+              Building fast, scalable, and user-friendly web applications.
+            </p>
+          </div>
+
+          <!-- Skill Item -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Tailwind CSS"
+              class="mx-auto mb-4 w-20 h-20"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Tailwind CSS</h3>
+            <p class="mt-2 text-gray-600">
+              Rapidly designing responsive UIs with a utility-first CSS
+              framework.
+            </p>
+          </div>
+
+          <!-- Skill Item -->
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Git"
+              class="mx-auto mb-4 w-20 h-20"
+            />
+            <h3 class="text-xl font-semibold text-gray-800">Git</h3>
+            <p class="mt-2 text-gray-600">
+              Version control and collaboration for efficient project
+              management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            My Portfolio
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            A selection of my recent work.
+          </p>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Portfolio Item -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Project Title 1
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Brief description of the project, the technologies used, and the
+                outcome.
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <!-- Portfolio Item -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Project Title 2
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Brief description of the project, the technologies used, and the
+                outcome.
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <!-- Portfolio Item -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Project Title 3
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Brief description of the project, the technologies used, and the
+                outcome.
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <!-- Portfolio Item -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Project 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Project Title 4
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Brief description of the project, the technologies used, and the
+                outcome.
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <!-- Portfolio Item -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Project 5"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Project Title 5
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Brief description of the project, the technologies used, and the
+                outcome.
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <!-- Portfolio Item -->
+          <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Project 6"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Project Title 6
+              </h3>
+              <p class="mt-4 text-gray-600">
+                Brief description of the project, the technologies used, and the
+                outcome.
+              </p>
+              <a
+                href="#"
+                class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            What My Clients Say
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            Hear from some of the people I've worked with.
+          </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial Item -->
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Client 1"
+                class="mx-auto rounded-full w-24 h-24"
+              />
+            </div>
+            <p class="text-gray-600 italic">
+              "Working with [Your Name] was an absolute pleasure. The quality of
+              work and attention to detail were top-notch."
+            </p>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Client Name 1
+            </h3>
+            <span class="text-gray-500 text-sm">Position, Company</span>
+          </div>
+
+          <!-- Testimonial Item -->
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Client 2"
+                class="mx-auto rounded-full w-24 h-24"
+              />
+            </div>
+            <p class="text-gray-600 italic">
+              "[Your Name] delivered exactly what we were looking for. I would
+              highly recommend their services!"
+            </p>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Client Name 2
+            </h3>
+            <span class="text-gray-500 text-sm">Position, Company</span>
+          </div>
+
+          <!-- Testimonial Item -->
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="mb-4">
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Client 3"
+                class="mx-auto rounded-full w-24 h-24"
+              />
+            </div>
+            <p class="text-gray-600 italic">
+              "I was impressed with the professionalism and the final outcome of
+              the project. Great job!"
+            </p>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Client Name 3
+            </h3>
+            <span class="text-gray-500 text-sm">Position, Company</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            Get In Touch
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            I'm currently available for freelance work. If you have a project in
+            mind or just want to say hello, feel free to contact me!
+          </p>
+        </div>
+
+        <div class="md:flex md:justify-center">
+          <div class="bg-gray-50 p-8 rounded-lg shadow-lg md:w-2/3 lg:w-1/2">
+            <form action="#" method="POST">
+              <div class="mb-6">
+                <label
+                  for="name"
+                  class="block text-gray-700 text-sm font-semibold mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="email"
+                  class="block text-gray-700 text-sm font-semibold mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-gray-700 text-sm font-semibold mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-400 py-10">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="md:flex md:justify-between">
+          <!-- Footer Logo and About -->
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-white text-2xl font-bold mb-2">Your Brand</h3>
+            <p class="text-gray-400 text-sm">
+              A passionate developer and designer, crafting elegant solutions
+              with a focus on user experience and clean code.
+            </p>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="grid grid-cols-2 gap-6 md:flex md:gap-10">
+            <a
+              href="#home"
+              class="text-gray-400 hover:text-white transition duration-300"
+              >Home</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-400 hover:text-white transition duration-300"
+              >Skills</a
+            >
+            <a
+              href="#portfolio"
+              class="text-gray-400 hover:text-white transition duration-300"
+              >Portfolio</a
+            >
+            <a
+              href="#testimonials"
+              class="text-gray-400 hover:text-white transition duration-300"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-400 hover:text-white transition duration-300"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="flex space-x-6 mt-6 md:mt-0">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition duration-300"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.77.35-1.59.58-2.46.69.88-.52 1.55-1.35 1.88-2.35-.83.48-1.75.83-2.72 1.02a4.28 4.28 0 0 0-7.56 3.91 12.17 12.17 0 0 1-8.83-4.48c-.37.64-.57 1.37-.57 2.16 0 1.49.76 2.81 1.93 3.58a4.28 4.28 0 0 1-1.94-.54v.05c0 2.08 1.48 3.81 3.44 4.2-.36.1-.74.16-1.13.16-.27 0-.54-.03-.8-.08.54 1.68 2.09 2.91 3.93 2.94A8.59 8.59 0 0 1 2 18.39a12.07 12.07 0 0 0 6.55 1.92c7.86 0 12.17-6.5 12.17-12.15 0-.18-.01-.36-.02-.53.83-.6 1.55-1.36 2.12-2.22z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition duration-300"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M9 8H6v12h3V8zm-1.5-4C6.12 4 5 5.12 5 6.5S6.12 9 7.5 9 10 7.88 10 6.5 8.88 4 7.5 4zm12.5 4h-3v-2c0-.9.7-1 1-1h2V2h-3c-3 0-4 1.8-4 4v2h-2v3h2v8h3v-8h2.6l.4-3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition duration-300"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM8.75 17h-3V9h3v8zm-1.5-9.25c-.97 0-1.75-.78-1.75-1.75S6.28 4.25 7.25 4.25 9 5.03 9 6s-.78 1.75-1.75 1.75zm12.25 9.25h-3v-4c0-1.13-.86-1.75-1.75-1.75s-1.75.62-1.75 1.75v4h-3V9h3v1.1c.74-.9 1.77-1.35 2.75-1.35 2.23 0 3.5 1.4 3.5 3.5v4.75z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="text-center text-gray-500 text-sm mt-10">
+          <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS for Mobile Menu Toggle -->
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
